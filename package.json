@@ -1,0 +1,27 @@
+{
+  "name": "ui5.walkthrough",
+  "version": "1.0.0",
+  "description": "OpenUI5 Typescript Walkthrough",
+  "private": true,
+  "scripts": {
+    "start": "ui5 serve -o index.html",
+    "test": "ui5 serve -o test/mockServer.html",
+    "ts-errors": "npx @ui5/ts-interface-generator --watch",
+    "build": "ui5 build --all --clean-dest",
+    "serve-dist": "ws --compress -d dist --open"
+  },
+  "keywords": [],
+  "author": "Adria Casado",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/openui5": "^1.132.0",
+    "@ui5/cli": "^4.0.13",
+    "@ui5/ts-interface-generator": "^0.10.0",
+    "local-web-server": "^5.4.0",
+    "typescript": "^5.8.2",
+    "ui5-middleware-livereload": "^3.1.0",
+    "ui5-middleware-serveframework": "^3.5.0",
+    "ui5-middleware-simpleproxy": "^3.4.0",
+    "ui5-tooling-transpile": "^3.7.2"
+  }
+}
